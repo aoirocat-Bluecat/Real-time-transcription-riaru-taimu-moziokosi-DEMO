@@ -12,8 +12,42 @@ button{cursor:pointer}
 .start{background:#00c853;color:#fff}.stop{background:#d50000;color:#fff}.save{background:#2962ff;color:#fff}
 #status{text-align:center;padding:8px;background:#1b1b1b}
 #subtitleWrap{flex:1;display:flex;align-items:flex-end;justify-content:center;padding:20px}
-#subtitle{background:rgba(0,0,0,.8);padding:15px 25px;border-radius:15px;font-size:36px;max-width:95%;text-align:center;word-break:break-word}
-#dictionaryPanel{background:#1a1a1a;padding:10px}
+#subtitle#subtitle{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    font-size:min(10vw,120px);
+
+    font-weight:bold;
+
+    color:white;
+
+    background:transparent;
+
+    text-shadow:
+    -3px -3px 0 #000,
+     3px -3px 0 #000,
+    -3px  3px 0 #000,
+     3px  3px 0 #000,
+     0px  0px 20px #000;
+
+    word-break:break-word;
+}#dictionaryPanel{background:#1a1a1a;padding:10px}
 .dict-inputs{display:flex;gap:5px;flex-wrap:wrap}
 .dict-inputs input{flex:1}
 #dictionaryList{max-height:140px;overflow:auto}
